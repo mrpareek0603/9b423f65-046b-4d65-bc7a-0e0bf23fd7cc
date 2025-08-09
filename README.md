@@ -6,8 +6,9 @@
     - React.js
 
 # Note:
-    - I created the frontend  using reacta s i have some experience in it, but I alos took a look at how things work in Vue.js, and I must say the syntax is cleaner in Vue.
+    - I created the frontend  using react as I have some experience in it, but I also took looked at how things work in Vue.js, and I must say the syntax is cleaner in Vue.
     - I will rampup on Vue before joining the company and start working on it as soon as I join.
+    - PS: I can adapt fast :D
 
 ## Backend
 ``` bash

@@ -7,7 +7,7 @@
     - repository is responsible to communicate with the csv file and get data from it
 
     ### folders/file
-    -   .env contains the port niumber to run server
+    -   .env contains the port number to run server
     -   /src/data contains the cs vfiles
     -   /src/utils/csvLoader.js contains the utility function to load the csv file
 
