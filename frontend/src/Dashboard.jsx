@@ -87,14 +87,14 @@ const Dashboard = () => {
               <div className="metric-title">
                 Total <span className="info" title="Sum to date">ⓘ</span>
               </div>
-              <div className="metric-value green">{meta ? meta.totalCarbon/1000 : '-'}</div>
+              <div className="metric-value green">{meta ? meta.totalCarbon : '-'}</div>
               <div className="metric-unit">Tonnes</div>
             </div>
             <div className="metric">
               <div className="metric-title">
                 Monthly <span className="info" title="Average per month">ⓘ</span>
               </div>
-              <div className="metric-value green">{meta ? meta.monthlyCarbon/1000 : '-'}</div>
+              <div className="metric-value green">{meta ? meta.monthlyCarbon : '-'}</div>
               <div className="metric-unit">Tonnes</div>
             </div>
           </div>
@@ -157,7 +157,7 @@ const Dashboard = () => {
             <ReactECharts option={chartOptions} style={{ height: 400, width: '100%' }} />
           </figure>
         ) : (
-          !isLoading && <p className="empty">No data yet. Pick a range and click Load.</p>
+          !isLoading && <p className="empty">No data yet. Pick a deviceId and date range and click Load.</p>
         )}
 
 

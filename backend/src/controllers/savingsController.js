@@ -16,7 +16,7 @@ export async function getSavings(req, res, next) {
       console.log(('--device id more than 10'));
 
       return res.status(400).json({
-        message: `Bad Request. Enter DeviceId from 1 to ${devicesData.length}`,
+        message: `Bad Request. Enter DeviceId from 1 to ${devicesData.length} or leave it blank to get all data`,
       });
     }
 

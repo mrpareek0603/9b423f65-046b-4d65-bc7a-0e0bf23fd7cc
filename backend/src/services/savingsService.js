@@ -25,9 +25,9 @@ export async function getSavingsForDeviceInRange(deviceId, startDate, endDate) {
   }));
 
   const fetchedData = {
-    totalCarbon: parseFloat(totalCarbon.toFixed(1)),
+    totalCarbon: parseFloat((totalCarbon/1000).toFixed(1)),
     totalDiesel: parseFloat(totalDiesel.toFixed(1)),
-    monthlyCarbon: parseFloat((totalCarbon / data.length).toFixed(1)),
+    monthlyCarbon: parseFloat(((totalCarbon / data.length)/1000).toFixed(1)),
     monthlyDiesel: parseFloat((totalDiesel / data.length).toFixed(1)),
     data,
   };
